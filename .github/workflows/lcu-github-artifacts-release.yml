@@ -2,15 +2,15 @@ name: Pounchix/public-web-react
 
 on:
   push:
-    branches: [main]
+    branches: [main,Https]
   pull_request:
-    branches: [main]
+    branches: [main,Https]
 
 permissions: write-all
 
 env:
   CI: false
-  Branches: main
+  Branches: main,Https
   MainBranch: main
   NPMRegistry: https://registry.npmjs.org/
   InstallCommand: npm ci
